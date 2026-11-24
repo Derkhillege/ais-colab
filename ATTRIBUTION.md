@@ -8,10 +8,11 @@ this repository derives its own quantities, it says so explicitly and does not
 present them as any of the methods below.
 
 Verification status is recorded per source, because it affects how much weight a
-claim can carry. "Verified" means the primary document was read directly;
-"supplied" means the material was provided as a document to this project;
-"secondary" means the claim rests on third-party summaries and has not been
-confirmed against the primary source.
+claim can carry. "Verified" means the primary document was read directly and is
+publicly retrievable; "primary, non-public" means the primary source was
+consulted directly but is not publicly available, so a reader cannot check it
+without obtaining it from the publisher; "secondary" means the claim rests on
+third-party summaries and has not been confirmed against the primary source.
 
 ## Definitions and norms
 
@@ -40,20 +41,21 @@ the reliability measure for lock passage.
 ## Measurement methods and data sources
 
 **NIS / IVS** (Nationale Informatievoorziening Scheepvaart; Informatie- en
-Volgsysteem voor de Scheepvaart) — Rijkswaterstaat. *Supplied.* The waiting
-duration definition used in this project's comparison —
+Volgsysteem voor de Scheepvaart) — Rijkswaterstaat. *Primary, non-public.*
+The waiting duration definition used in this project's comparison —
 `Wachttijd = DatumTijdInvaarGroen − DatumTijdToerbeurt`, duration in seconds —
-is quoted from a NIS data dictionary entry (field 34) provided to this project.
+is quoted from the NIS data dictionary, field 34 (`Wachttijd`), which is
+obtainable from Rijkswaterstaat and is not published openly.
 The field naming convention matches the IVS export fields handled by
 `RWS-NL/fis-crawler`. This project does not re-implement the NIS method; it
 compares against NIS published outputs only.
 
 **EuRIS** (European River Information Services) — a product of the RIS COMEX
 project, operated by a partnership of European waterway authorities.
-*Supplied and secondary.* Source of the average passage duration metric and of
-the passage-line mechanism (typed lines at a configured offset per lock and
-direction, reported per chamber) that this project's operational frame
-approximates. EuRIS requests the following attribution for use of its data or
+*Portal output observed directly; definition secondary.* Source of the average
+passage duration metric and of the passage-line mechanism (typed lines at a
+configured offset per lock and direction, reported per chamber) that this
+project's operational frame approximates. EuRIS requests the following attribution for use of its data or
 services, which applies to any downstream service built on it:
 
 > API/Service [name of API/service] incorporated from EuRIS (eurisportal.eu)
