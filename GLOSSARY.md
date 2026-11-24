@@ -12,10 +12,15 @@ normative source. Every term records its Dutch original.
 
 ## Lock structure
 
+**Lock complex**:
+The whole structure at one location, comprising every chamber that serves it.
+Dutch: _sluizencomplex_. Volkeraksluizen is one complex of four chambers.
+_Avoid_: lock (ambiguous between complex and chamber), lock site
+
 **Lock chamber**:
 The enclosed basin, with a gate at each end, that a vessel is raised or lowered
-in. Dutch: _kolk_ / _sluiskolk_. A lock may have several; Volkeraksluizen has four.
-_Avoid_: lock (which means the whole structure), lockage basin, kolk
+in. Dutch: _kolk_ / _sluiskolk_. A lock complex may have several.
+_Avoid_: lock (which means the whole structure), lockage basin, sublock, kolk
 
 **Lock approach**:
 The protected water at one end of a lock, between the open fairway and the lock
@@ -136,9 +141,16 @@ _Avoid_: EuRIS passage time, the European definition
 A line across the fairway, configured per lock and per direction, whose crossing
 starts or stops a clock in the EURIS method. Lines carry a type (for example
 *Lock Queue*) and an offset in metres from the lock. They are configured per
-waterway authority, so they are not guaranteed to be placed consistently across
-locks.
+waterway authority, so whether they are placed consistently across locks is an
+open question rather than an assumption.
 _Avoid_: gate line, detection line, cordon
+
+**Passage**:
+Reserved here for a vessel's act of getting past a lock. Note the collision:
+Rijkswaterstaat's fis-crawler uses "passage" for an edge through a structure in
+a routing graph, which is an unrelated sense. Where the routing sense is meant,
+say *network edge*.
+_Avoid_: transit, passing (as a noun), lockage (a different concept entirely)
 
 **Turn assignment**:
 The moment a lock operator allocates a vessel its place in the order of
