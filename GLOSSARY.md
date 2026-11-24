@@ -5,6 +5,9 @@ covers the lock performance domain: the quantities that describe how long a
 vessel takes to get through a lock, and the terms the Dutch and European
 sources use for them.
 
+The definitions below are drawn from sources authored by others, credited in
+[ATTRIBUTION.md](./ATTRIBUTION.md); no authorship of them is claimed here.
+
 Canonical terms are English where an accepted English term exists. Where no
 accepted English term exists, the Dutch term is canonical and is used as a
 loanword; inventing an English translation would invite drift from the

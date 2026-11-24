@@ -309,6 +309,8 @@ Estimates based on **Marine Cadastre** AIS data (https://hub.marinecadastre.gov/
 
 ## References & Previous Work
 
+Methods, definitions and datasets authored by others — Richtlijnen Vaarwegen, SIVAK, NIS/IVS, EuRIS, Rijkswaterstaat FIS VNDS — are credited in [ATTRIBUTION.md](./ATTRIBUTION.md). No authorship of those methods is claimed by this project.
+
 This project builds upon research and visualization techniques developed at TU Delft.
 
 - **"The North Sea is ready for its close-up"** (2021). *TU Delft Stories*. [Link](https://www.tudelft.nl/en/2021/citg/hydraulic-engineering/the-north-sea-is-ready-for-its-close-up)
