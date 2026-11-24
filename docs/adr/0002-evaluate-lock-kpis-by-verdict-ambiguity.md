@@ -50,7 +50,13 @@ performance changed over time.
 - Change detection over time requires long, consistent AIS history.
   `scripts/crawl_euris.py` collects live and cannot backfill, so this verdict
   lands last and carries a data dependency the other two do not.
-- Whether EURIS passage lines are placed consistently across locks is an open
-  question, not an assumption: the configuration UI scopes them per
-  organisation. It must be established by inspection before any cross-lock
-  claim rests on it.
+- Whether EURIS passage lines are placed consistently across locks was an open
+  question, since the configuration UI scopes them per organisation. **For the
+  Netherlands it is now settled: they are consistent.** Every lock queue line
+  in the EuRIS export sits at a 500 m offset, one pair per lock complex, under
+  a single authority. See [euris_passage_lines.md](../euris_passage_lines.md).
+  It remains open for the other EuRIS countries.
+- Because the configuration does not in fact vary between Dutch locks, the
+  internal-ambiguity test changes shape: it measures whether the verdict is
+  sensitive to the designers' single 500 m choice, rather than whether locks
+  are configured inconsistently. It stays in scope as a sensitivity analysis.

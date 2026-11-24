@@ -60,6 +60,11 @@ services, which applies to any downstream service built on it:
 
 > API/Service [name of API/service] incorporated from EuRIS (eurisportal.eu)
 
+The EuRIS NetworkData bulk export — including the `PassageLine` layer that
+carries this measurement geometry — is retrieved from the portal's
+`AWFImportData/api/ExportFile` endpoints; see
+[docs/euris_passage_lines.md](./docs/euris_passage_lines.md).
+
 Portal: <https://www.eurisportal.eu> · API documentation:
 <https://developer.eurisportal.eu/docs>
 

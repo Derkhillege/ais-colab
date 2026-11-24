@@ -31,6 +31,13 @@ outputs only.
 
 ## Consequences
 
+- The operational layer can be built on EURIS's **actual** measurement
+  geometry, not an approximation of it: the `PassageLine` layer ships in the
+  EuRIS bulk export. See [euris_passage_lines.md](../euris_passage_lines.md).
+  One complication carries into the design — those lines attach to lock
+  complexes while EuRIS reports durations per chamber, so chamber attribution
+  is a separate join that the re-implementation must make explicitly.
+
 - Quantities that the conceptual layer names but the operational layer cannot
   yet measure — lay-by duration, and locking duration if lockage inference
   fails — become an explicit backlog item gated on ODS or SCADA access, rather
